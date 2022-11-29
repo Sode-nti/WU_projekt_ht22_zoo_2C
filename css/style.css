@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2
+{
+    text-align: center;
+}
+
+#start_grid_wrapper
+{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "he"
+    "text"
+    "foot";
+    
+    background-color: rgb(203, 203, 87);
+}
+
+
+
+#start_header
+{
+
+    grid-area: he;
+    display: flex;
+    justify-content: space-between;
+    background-color:darkkhaki;
+    
+}
+
+#start_main
+{
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/bg/elephant_bg.jpg");
+    filter: sepia(0.9);
+    background-size:100%;
+    background-blend-mode: difference;
+}
+
+#start_page
+{
+    background-color: rgba(0,0,0,0.4);
+
+    padding-inline: 20px;
+
+    width: 60vw;
+    grid-area: text;
+    
+    color: wheat;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "wel wel"
+    "inf infimg"
+    "tex2 tex3";
+}
+
+#start_welcome
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: wel;
+    text-align: center;
+}
+
+#start_info
+{
+    grid-area: inf;
+}
+
+#start_info_image
+{
+    grid-area: infimg;
+}
+
+#start_text_2
+{
+    grid-area: tex2;
+}
+
+#start_text_3
+{
+    grid-area: tex3;
+}
+
+#start_footer
+{
+    grid-area: foot;
+    background-color: darkgray;
+}
