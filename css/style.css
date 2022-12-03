@@ -1,3 +1,11 @@
+:root
+{
+    --header_height: 100px;
+    --footer_height: 100px;
+    --main_page_width: 70vw;
+    --bg_blur: 10px;
+}
+
 *
 {
     margin: 0;
@@ -16,13 +24,13 @@ h2
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: var(--header_height) 1fr var(--footer_height);
     grid-template-areas: 
     "he"
     "text"
     "foot";
     
-    background-color: rgb(203, 203, 87);
+    background-color: white;
 }
 
 
@@ -33,7 +41,7 @@ h2
     grid-area: he;
     display: flex;
     justify-content: space-between;
-    background-color:darkkhaki;
+    background-color:green;
     
 }
 
@@ -41,19 +49,41 @@ h2
 {
     display: flex;
     justify-content: center;
-    background-image: url("../img/bg/elephant_bg.jpg");
-    filter: sepia(0.9);
-    background-size:100%;
-    background-blend-mode: difference;
+    
+}
+
+#start_bg_div
+{
+    overflow: hidden;
+}
+
+#start_bg_image
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    filter: saturate(200%) blur(var(--bg_blur));
+    /*
+    margin: calc(-1 * var(--bg_blur)) calc(-2 * var(--bg_blur)) calc(-2 * var(--bg_blur)) calc(-1 * var(--bg_blur));
+    */
+    width: 100vw;
+    height: auto;
 }
 
 #start_page
-{
-    background-color: rgba(0,0,0,0.4);
+{  
+    position: absolute;
+    top: var(--header_height);
+    left: 100vw - var(--main_page_width);
 
+    width: var(--main_page_width);
+    height: minmax(100000px, 100vh);
+    /*calc(100vh - var(--footer_height));
+*/
+    background-color: rgba(0,0,0,0.4);
     padding-inline: 20px;
 
-    width: 60vw;
     grid-area: text;
     
     color: wheat;
