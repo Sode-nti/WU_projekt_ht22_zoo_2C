@@ -5,54 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo Restaurant</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script  src="js/hamburger.js"></script>
 </head>
 <body>
+
+
     <div id="start_grid_wrapper">
         
         
         <header id="start_header">
             <img src="img/logo.png" alt="logo" id="start_logo" class="logo">
             <h1>Zoo Restaurant</h1>
-            <img src="img/ham.png" alt="hamburger menu" id="start_hamburger">
+            <div class="start_ham_icon" onclick="toggleClass()">
+                <h1>&#9776;</h1> 
+            </div>
         </header>
         
-        <div id="start_main">
-            <div id="start_bg_div">
-                <img src="img/bg/elephant_bg.jpg" alt="bg image" id="start_bg_image">
-            </div>
-            <div id="start_page">
-                <section id="start_welcome">
-                    <h2>Välkommen</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nisi, rerum earum recusandae laborum natus. Error, sit porro mollitia repellendus dolorum consequatur voluptas assumenda unde eius repellat blanditiis, et esse.</p>
-                    
-                </section>
-                
-                
-                <section id="start_info">
-                    <h2>Information</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam impedit reprehenderit explicabo rem dolorum debitis dolor corrupti vel, doloremque facilis, saepe ducimus a laboriosam atque, inventore hic repellendus illo.</p>
-                </section>
-                
-                <section id="start_info_image">
-                    <img src="img/infimg.png" alt="Information image">
-                    <p>Våra glada kunder ^</p>
-                </section>
-                
-                <section id="start_text_2">
-                    <h2>Mat och dess påverkan på samhället</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum voluptatem repellendus quo aliquid vero doloremque voluptate magni. Reprehenderit quo asperiores cupiditate maiores. Repellendus sit aperiam omnis ut laborum aut!</p>
-                </section>
-                
-                <section id="start_text_3">
-                    <h2>Etik kring giraffkött</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consequatur voluptate laboriosam numquam fuga alias accusantium velit, assumenda quisquam hic vel corporis eligendi atque similique vitae esse deserunt mollitia reprehenderit.</p>
-                </section>
-                
-            </div>
-        </div>
-
         
+        <div id="start_bg_div">
+            <img src="img/bg/flamingo_bg.jpg" alt="bg image" id="start_bg_image">
+        </div>
+        
+        <div id="start_page">
+            <section id="start_welcome">
+                <h2>Välkommen</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nisi, rerum earum recusandae laborum natus. Error, sit porro mollitia repellendus dolorum consequatur voluptas assumenda unde eius repellat blanditiis, et esse.</p>
+                
+            </section>
+            
+            
+            <section id="start_info">
+                <h2>Information</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam impedit reprehenderit explicabo rem dolorum debitis dolor corrupti vel, doloremque facilis, saepe ducimus a laboriosam atque, inventore hic repellendus illo.</p>
+            </section>
+            
+            <section id="start_info_image">
+                <img src="img/infimg.png" alt="Information image">
+                <p>Våra glada kunder ^</p>
+            </section>
+            
+            <section id="start_text_2">
+                <h2>Mat och dess påverkan på samhället</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum voluptatem repellendus quo aliquid vero doloremque voluptate magni. Reprehenderit quo asperiores cupiditate maiores. Repellendus sit aperiam omnis ut laborum aut!</p>
+            </section>
+            
+            <section id="start_text_3">
+                <h2>Etik kring giraffkött</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consequatur voluptate laboriosam numquam fuga alias accusantium velit, assumenda quisquam hic vel corporis eligendi atque similique vitae esse deserunt mollitia reprehenderit.</p>
+            </section>
+        </div>
+            
+        
+        
+        <div class="ham_div">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="menue.html">Our menu</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
         <footer id="start_footer">
             footer
         </footer>
