@@ -4,14 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Om Oss</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script  src="js/hamburger.js"></script>
 </head>
 <body>
-    <div id="start_grid_wrapper">
 
-        <p>Soon...</p>
-        <a href="index.html">Back</a>
+
+    <div id="about_grid_wrapper">
+        
+        
+        <header class="header">
+            <a href="index.html"><img src="img/logo/logo2.png" alt="logo" class="logo"></a>
+            <h2>Om Oss</h1>
+            <div class="ham_icon" onclick="toggleClass()">
+                <h1>&#9776;</h1> 
+            </div>
+        </header>
+        
+        <div class="bg_div">
+            <img src="img/bg/lama_bg.jpg" alt="bg image" id="about_bg_image">
+        </div>
+        
+        <div id="about_page">
+
+            <section id="about_about">
+                <h2>Bar de la Baboon</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore deserunt nam aperiam tenetur ex inventore facere, maxime mollitia distinctio officiis neque consequatur dicta dolor impedit a totam pariatur minus sequi!</p>
+
+            </section>
+
+            <section id="about_contact">
+                <h2>Kontakt uppgifter</h2>
+                <p>Email: mail.mailsson@company.se</p>
+                <p>Mobil: +46-785-558-4</p>
+            </section>
+            
+            <section id="about_mission">
+                <h2 id="about_mission_header">Vårat uppdrag</h2>
+                <p id="about_mission_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae assumenda consequatur quas adipisci magnam est nobis iure sit praesentium? Culpa excepturi, numquam maiores facilis necessitatibus architecto voluptates doloremque quibusdam.</p>
+                <img src="img/monkey/monkey-man-presenting-something.jpg" alt="Mission image" id="about_mission_img">
+            </section>
+
+            <div id="about_employees">
+
+                <h2>Våra anställda</h2>
+                <section id="about_employees_list">
+
+                    <article class="employee">
+                        <article class="employee">
+                            <img src="img/monkey/monkey-man-pointing-front_1368-7122.webp" alt="banan apa" class="employee_img">
+                            <h3>Lars, Direktör</h3>
+                            <p>"The monkey stayed off the minefield. He did not want to go baboon!"<br> - Lars</p>
+                        </article>
+                    </article>
+                    
+                    <article class="employee">
+                        <img src="img/monkey/ape-man-speaking-through-banana_1368-7139.jpg" alt="banan apa" class="employee_img">
+                        <h3>Göran, Servitör</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+
+                    <article class="employee">
+                        <article class="employee">
+                            <img src="img/monkey/monkey-man-making-crazy-gesture.jpg" alt="banan apa" class="employee_img">
+                            <h3>Farmor, Bagare</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </article>
+                    </article>
+                    
+                    <article class="employee">
+                        <article class="employee">
+                            <img src="img/monkey/monkey-man-counting-three_1368-7143.webp" alt="banan apa" class="employee_img">
+                            <h3>Håkan, Bokförare</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </article>
+                    </article>
+                
+                </section>
+            </div>
+        </div>
+            
+        
+        
+        <div class="ham_div">
+            <a href="index.html" class="ham_list_items"><h2>Hem</h2></a>
+            <a href="menu.html" class="ham_list_items"><h2>Vår meny</h2></a>
+            <a href="about.html" class="ham_list_items"><h2>Om oss</h2></a>
+        </div>
+
+        <footer class="footer">
+            footer
+        </footer>
         
     </div>
 </body>
