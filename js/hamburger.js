@@ -1,5 +1,5 @@
 function toggleClass() 
 {
-    let menu = document.querySelector(".ham_nav");
+    let menu = document.querySelector("nav");
     menu.classList.toggle("hamburger_visible");
 }

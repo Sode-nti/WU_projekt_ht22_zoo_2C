@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab:wght@300&family=Shadows+Into+Light&display=swap');
 
-:root {
+* {
     --header_height: 100px;
     --footer_height: 100px;
 
@@ -21,6 +21,13 @@
     --menu_item_width: 15vw;
 
     --nav_item_width: 150px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    font-family: 'Lora', serif;
 }
 
 body {
@@ -29,14 +36,6 @@ body {
     width: 100vw;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-
-    font-family: 'Lora', serif;
-}
 
 p {
     overflow: hidden;
@@ -250,7 +249,7 @@ h2 {
 
     justify-content: space-between;
     align-items: flex-start;
-    align-content:stretch;
+    align-content: stretch;
 
     height: var(--menu_height);
     width: var(--menu_width);
@@ -349,7 +348,7 @@ h2 {
 
 /*#region header, footer and hamburger*/
 
-.header {
+header {
     
     height: var(--header_height);
     grid-area: head;
@@ -376,7 +375,7 @@ h2 {
     background-color: rgba(256, 256, 256, 0.3);
 }
 
-.ham_nav {
+nav {
     grid-area: page;
     position: relative;
     display: flex;
@@ -396,12 +395,12 @@ h2 {
     overflow: hidden;
 }
 
-.ham_nav a {
+nav a {
     color: #f5deb3;
     text-decoration: none;
 }
 
-.ham_nav.hamburger_visible {
+nav.hamburger_visible {
     height: calc(var(--header_height) / 2);
 
     animation-name: ham_slide_open;
@@ -446,13 +445,20 @@ h2 {
     filter: saturate(120%) blur(2px);
 }
 
-.footer {
+footer {
     grid-area: foot; 
     
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     height: var(--footer_height);
     width: 100vw;
     background-color: #051622;
+    
+        text-decoration:solid;
+        letter-spacing: 2px;
 }
 
 /*#endregion*/
