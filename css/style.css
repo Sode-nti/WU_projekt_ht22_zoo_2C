@@ -60,8 +60,8 @@ h2 {
 
 #start_grid_wrapper {
     display: grid;
-    grid-column: var(--header_height) var(--start_height) var(--footer_height);
-    grid-row: 100vw;
+    grid-template-columns: var(--header_height) var(--start_height) var(--footer_height);
+    grid-template-rows: 100vw;
     grid-template-areas: 
     "head"
     "page"
@@ -127,8 +127,8 @@ h2 {
 
 #about_grid_wrapper {
     display: grid;
-    grid-column: var(--header_height) var(--about_height) var(--footer_height);
-    grid-row: 100vw;
+    grid-template-columns: var(--header_height) var(--about_height) var(--footer_height);
+    grid-template-rows: 100vw;
     grid-template-areas: 
     "head"
     "page"
@@ -226,8 +226,8 @@ h2 {
 
 #menu_grid_wrapper {
     display: grid;
-    grid-column: var(--header_height) var(--menu_height) var(--footer_height);
-    grid-row: 100vw;
+    grid-template-columns: var(--header_height) var(--menu_height) var(--footer_height);
+    grid-template-rows: 100vw;
     grid-template-areas: 
     "head"
     "page"
