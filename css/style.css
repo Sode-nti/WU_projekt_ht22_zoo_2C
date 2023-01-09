@@ -372,7 +372,7 @@ header {
 
 .ham_icon:hover {
     cursor: pointer;
-    background-color: rgba(256, 256, 256, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 nav {
@@ -412,7 +412,7 @@ nav.hamburger_visible {
 
 
 .ham_list_items:hover {
-    background-color: rgba(256,256,266,0.3);
+    background-color: rgba(255,255,255,0.3);
 }
 
 @keyframes ham_slide_open {
